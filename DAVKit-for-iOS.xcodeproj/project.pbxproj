@@ -398,9 +398,9 @@
 			productReference = C9FF77EC121C6F51001250C7 /* Tests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
-		CD8AE290161873710095DC1B /* libdavkit */ = {
+		CD8AE290161873710095DC1B /* davkit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CD8AE29E161873710095DC1B /* Build configuration list for PBXNativeTarget "libdavkit" */;
+			buildConfigurationList = CD8AE29E161873710095DC1B /* Build configuration list for PBXNativeTarget "davkit" */;
 			buildPhases = (
 				CD8AE28D161873710095DC1B /* Sources */,
 				CD8AE28E161873710095DC1B /* Frameworks */,
@@ -411,7 +411,7 @@
 			);
 			dependencies = (
 			);
-			name = libdavkit;
+			name = davkit;
 			productName = libdavkit;
 			productReference = CD8AE291161873710095DC1B /* liblibdavkit.a */;
 			productType = "com.apple.product-type.library.static";
@@ -441,7 +441,7 @@
 			targets = (
 				8DC2EF4F0486A6940098B216 /* DAVKit */,
 				C9FF77EB121C6F51001250C7 /* Tests */,
-				CD8AE290161873710095DC1B /* libdavkit */,
+				CD8AE290161873710095DC1B /* davkit */,
 			);
 		};
 /* End PBXProject section */
@@ -752,7 +752,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CD8AE29E161873710095DC1B /* Build configuration list for PBXNativeTarget "libdavkit" */ = {
+		CD8AE29E161873710095DC1B /* Build configuration list for PBXNativeTarget "davkit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD8AE29C161873710095DC1B /* Debug */,
