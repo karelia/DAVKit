@@ -7,6 +7,12 @@
 
 #import "DAVRequests.h"
 
+#if TARGET_OS_IPHONE
+#import <MobileCoreServices/MobileCoreServices.h>
+#else
+#import <CoreServices/CoreServices.h>
+#endif
+
 #import "DAVListingParser.h"
 #import "DAVRequest+Private.h"
 
@@ -191,7 +197,7 @@
             NSData* data = [_request HTTPBody];
             NSAssert(data != nil, @"should have data if no length set");
             NSUInteger length = [data length];
-            [_request setValue:[NSString stringWithFormat:@"%ld", length] forHTTPHeaderField:@"Content-Length"];
+            [_request setValue:[NSString stringWithFormat:@"%@", @(length)] forHTTPHeaderField:@"Content-Length"];
         }
 
         NSString* MIMEType = [DAVPutRequest MIMETypeForExtension:[path pathExtension]];

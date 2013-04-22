@@ -7,7 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		5FEEF26316CE830C002C1CBF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEEF26216CE830C002C1CBF /* Foundation.framework */; };
+		5FEEF26F16CE840F002C1CBF /* DAVKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FED591121D989900DD1DFF /* DAVKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FEEF27016CE8426002C1CBF /* NSDateRFC1123.h in Headers */ = {isa = PBXBuildFile; fileRef = F94970EB132A093600713958 /* NSDateRFC1123.h */; };
+		5FEEF27116CE842E002C1CBF /* DAVListingParser.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FED592121D989900DD1DFF /* DAVListingParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FEEF27216CE8438002C1CBF /* DAVListingParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FED593121D989900DD1DFF /* DAVListingParser.m */; };
+		5FEEF27316CE843C002C1CBF /* NSDateRFC1123.m in Sources */ = {isa = PBXBuildFile; fileRef = F94970EC132A093600713958 /* NSDateRFC1123.m */; };
+		5FEEF27416CE8446002C1CBF /* DAVRequest+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FED596121D989900DD1DFF /* DAVRequest+Private.h */; };
+		5FEEF27516CE844E002C1CBF /* ISO8601DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FED5AE121D98B800DD1DFF /* ISO8601DateFormatter.m */; };
+		5FEEF27616CE8461002C1CBF /* DAVBaseRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = C9A4E39E1406E9CF004E4AEB /* DAVBaseRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FEEF27716CE8461002C1CBF /* DAVBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A4E39F1406E9CF004E4AEB /* DAVBaseRequest.m */; };
+		5FEEF27816CE8461002C1CBF /* DAVRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FED594121D989900DD1DFF /* DAVRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FEEF27916CE8461002C1CBF /* DAVRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FED595121D989900DD1DFF /* DAVRequest.m */; };
+		5FEEF27A16CE8461002C1CBF /* DAVRequestGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = C9A4E37C1406E12C004E4AEB /* DAVRequestGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FEEF27B16CE8461002C1CBF /* DAVRequestGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A4E37D1406E12C004E4AEB /* DAVRequestGroup.m */; };
+		5FEEF27C16CE8461002C1CBF /* DAVRequests.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FED597121D989900DD1DFF /* DAVRequests.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FEEF27D16CE8461002C1CBF /* DAVRequests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FED598121D989900DD1DFF /* DAVRequests.m */; };
+		5FEEF27E16CE8461002C1CBF /* DAVResponseItem.h in Headers */ = {isa = PBXBuildFile; fileRef = C9181BBA121DC31D0022E4AC /* DAVResponseItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FEEF27F16CE8461002C1CBF /* DAVResponseItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C9181BBB121DC31D0022E4AC /* DAVResponseItem.m */; };
+		5FEEF28016CE8461002C1CBF /* DAVSession.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FED599121D989900DD1DFF /* DAVSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FEEF28116CE8461002C1CBF /* DAVSession.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FED59A121D989900DD1DFF /* DAVSession.m */; };
+		5FEEF28216CE854C002C1CBF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEEF26216CE830C002C1CBF /* Foundation.framework */; };
+		5FEEF28416CE8598002C1CBF /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEEF28316CE8596002C1CBF /* MobileCoreServices.framework */; };
+		5FEEF28616CE868B002C1CBF /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEEF28516CE868A002C1CBF /* CoreServices.framework */; };
 		C9181BBC121DC31D0022E4AC /* DAVResponseItem.h in Headers */ = {isa = PBXBuildFile; fileRef = C9181BBA121DC31D0022E4AC /* DAVResponseItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9181BBD121DC31D0022E4AC /* DAVResponseItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C9181BBB121DC31D0022E4AC /* DAVResponseItem.m */; };
 		C9A4E37E1406E12C004E4AEB /* DAVRequestGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = C9A4E37C1406E12C004E4AEB /* DAVRequestGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -50,10 +72,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
-		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		32DBCF5E0370ADEE00C91783 /* DAVKit_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAVKit_Prefix.pch; sourceTree = "<group>"; };
+		5FEEF26016CE830C002C1CBF /* libDAVKit-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libDAVKit-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FEEF26216CE830C002C1CBF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5FEEF28316CE8596002C1CBF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		5FEEF28516CE868A002C1CBF /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* DAVKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DAVKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9181BBA121DC31D0022E4AC /* DAVResponseItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAVResponseItem.h; path = Sources/Core/DAVResponseItem.h; sourceTree = "<group>"; };
@@ -93,17 +116,26 @@
 		C9FED5C0121D98D600DD1DFF /* GDeleteTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GDeleteTest.m; path = Sources/Tests/GDeleteTest.m; sourceTree = "<group>"; };
 		C9FF77EC121C6F51001250C7 /* Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9FF77ED121C6F51001250C7 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
-		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		F94970EB132A093600713958 /* NSDateRFC1123.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDateRFC1123.h; sourceTree = "<group>"; };
 		F94970EC132A093600713958 /* NSDateRFC1123.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDateRFC1123.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5FEEF25D16CE830C002C1CBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FEEF28416CE8598002C1CBF /* MobileCoreServices.framework in Frameworks */,
+				5FEEF26316CE830C002C1CBF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DC2EF560486A6940098B216 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */,
+				5FEEF28616CE868B002C1CBF /* CoreServices.framework in Frameworks */,
+				5FEEF28216CE854C002C1CBF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +155,7 @@
 			children = (
 				8DC2EF5B0486A6940098B216 /* DAVKit.framework */,
 				C9FF77EC121C6F51001250C7 /* Tests.octest */,
+				5FEEF26016CE830C002C1CBF /* libDAVKit-iOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,19 +166,10 @@
 				08FB77AEFE84172EC02AAC07 /* Classes */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				089C1665FE841158C02AAC07 /* Resources */,
-				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				5FEEF26116CE830C002C1CBF /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
 			);
 			name = DAVKit;
-			sourceTree = "<group>";
-		};
-		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
-			isa = PBXGroup;
-			children = (
-				1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */,
-				1058C7B2FEA5585E11CA2CBB /* Other Frameworks */,
-			);
-			name = "External Frameworks and Libraries";
 			sourceTree = "<group>";
 		};
 		089C1665FE841158C02AAC07 /* Resources */ = {
@@ -170,30 +194,38 @@
 			name = Classes;
 			sourceTree = "<group>";
 		};
-		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */,
-			);
-			name = "Linked Frameworks";
-			sourceTree = "<group>";
-		};
-		1058C7B2FEA5585E11CA2CBB /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0867D6A5FE840307C02AAC07 /* AppKit.framework */,
-				D2F7E79907B2D74100F64583 /* CoreData.framework */,
-				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
-			);
-			name = "Other Frameworks";
-			sourceTree = "<group>";
-		};
 		32C88DFF0371C24200C91783 /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
 				32DBCF5E0370ADEE00C91783 /* DAVKit_Prefix.pch */,
 			);
 			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		5FEEF26116CE830C002C1CBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FEEF28816CE869C002C1CBF /* iOS */,
+				5FEEF28716CE8696002C1CBF /* OSX */,
+				5FEEF26216CE830C002C1CBF /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5FEEF28716CE8696002C1CBF /* OSX */ = {
+			isa = PBXGroup;
+			children = (
+				5FEEF28516CE868A002C1CBF /* CoreServices.framework */,
+			);
+			name = OSX;
+			sourceTree = "<group>";
+		};
+		5FEEF28816CE869C002C1CBF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5FEEF28316CE8596002C1CBF /* MobileCoreServices.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		C9FF7787121C6B8B001250C7 /* ISO8601 */ = {
@@ -272,6 +304,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		5FEEF26E16CE8408002C1CBF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FEEF26F16CE840F002C1CBF /* DAVKit.h in Headers */,
+				5FEEF27016CE8426002C1CBF /* NSDateRFC1123.h in Headers */,
+				5FEEF27116CE842E002C1CBF /* DAVListingParser.h in Headers */,
+				5FEEF27416CE8446002C1CBF /* DAVRequest+Private.h in Headers */,
+				5FEEF27616CE8461002C1CBF /* DAVBaseRequest.h in Headers */,
+				5FEEF27816CE8461002C1CBF /* DAVRequest.h in Headers */,
+				5FEEF27A16CE8461002C1CBF /* DAVRequestGroup.h in Headers */,
+				5FEEF27C16CE8461002C1CBF /* DAVRequests.h in Headers */,
+				5FEEF27E16CE8461002C1CBF /* DAVResponseItem.h in Headers */,
+				5FEEF28016CE8461002C1CBF /* DAVSession.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DC2EF500486A6940098B216 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -293,6 +342,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		5FEEF25F16CE830C002C1CBF /* DAVKit-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FEEF26D16CE830C002C1CBF /* Build configuration list for PBXNativeTarget "DAVKit-iOS" */;
+			buildPhases = (
+				5FEEF25C16CE830C002C1CBF /* Sources */,
+				5FEEF25D16CE830C002C1CBF /* Frameworks */,
+				5FEEF26E16CE8408002C1CBF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DAVKit-iOS";
+			productName = "DAVKit-iOS";
+			productReference = 5FEEF26016CE830C002C1CBF /* libDAVKit-iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		8DC2EF4F0486A6940098B216 /* DAVKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "DAVKit" */;
@@ -356,6 +422,7 @@
 			targets = (
 				8DC2EF4F0486A6940098B216 /* DAVKit */,
 				C9FF77EB121C6F51001250C7 /* Tests */,
+				5FEEF25F16CE830C002C1CBF /* DAVKit-iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -394,6 +461,22 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5FEEF25C16CE830C002C1CBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FEEF27216CE8438002C1CBF /* DAVListingParser.m in Sources */,
+				5FEEF27316CE843C002C1CBF /* NSDateRFC1123.m in Sources */,
+				5FEEF27516CE844E002C1CBF /* ISO8601DateFormatter.m in Sources */,
+				5FEEF27716CE8461002C1CBF /* DAVBaseRequest.m in Sources */,
+				5FEEF27916CE8461002C1CBF /* DAVRequest.m in Sources */,
+				5FEEF27B16CE8461002C1CBF /* DAVRequestGroup.m in Sources */,
+				5FEEF27D16CE8461002C1CBF /* DAVRequests.m in Sources */,
+				5FEEF27F16CE8461002C1CBF /* DAVResponseItem.m in Sources */,
+				5FEEF28116CE8461002C1CBF /* DAVSession.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DC2EF540486A6940098B216 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -440,6 +523,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -461,6 +545,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -479,10 +564,6 @@
 		1DEB91B208733DA50010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD_32_64_BIT)",
-					ppc,
-				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -496,15 +577,68 @@
 		1DEB91B308733DA50010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD_32_64_BIT)",
-					ppc,
-				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5FEEF26B16CE830C002C1CBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/DAVKit_iOS.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = DAVKit_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = include/DAVKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5FEEF26C16CE830C002C1CBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/DAVKit_iOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = DAVKit_Prefix.pch;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = include/DAVKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -577,6 +711,15 @@
 			buildConfigurations = (
 				1DEB91B208733DA50010E9CD /* Debug */,
 				1DEB91B308733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FEEF26D16CE830C002C1CBF /* Build configuration list for PBXNativeTarget "DAVKit-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FEEF26B16CE830C002C1CBF /* Debug */,
+				5FEEF26C16CE830C002C1CBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
