@@ -37,8 +37,6 @@
 		221F8B9D17259BFF004E7B9D /* DAVTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FED5B8121D98D600DD1DFF /* DAVTest.m */; };
 		221F8BAC17259C79004E7B9D /* libDAVKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEEF26016CE830C002C1CBF /* libDAVKit.a */; };
 		221F8BAF17259DD7004E7B9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEEF26216CE830C002C1CBF /* Foundation.framework */; };
-		221F8BB317259F16004E7B9D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221F8BB217259F16004E7B9D /* SenTestingKit.framework */; };
-		221F8BB417259F60004E7B9D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEEF28316CE8596002C1CBF /* MobileCoreServices.framework */; };
 		22AC1BAA17426F1C00AB09E1 /* KMSCloseCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AC1B5917426F1B00AB09E1 /* KMSCloseCommand.m */; };
 		22AC1BAB17426F1C00AB09E1 /* KMSCloseCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AC1B5917426F1B00AB09E1 /* KMSCloseCommand.m */; };
 		22AC1BAC17426F1C00AB09E1 /* KMSCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AC1B5B17426F1B00AB09E1 /* KMSCommand.m */; };
@@ -69,6 +67,10 @@
 		22AC1BC517426F1C00AB09E1 /* KMSTranscriptEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AC1B7417426F1B00AB09E1 /* KMSTranscriptEntry.m */; };
 		22AC1BEC17426F1C00AB09E1 /* webdav.json in Resources */ = {isa = PBXBuildFile; fileRef = 22AC1B9917426F1C00AB09E1 /* webdav.json */; };
 		22AC1BED17426F1C00AB09E1 /* webdav.json in Resources */ = {isa = PBXBuildFile; fileRef = 22AC1B9917426F1C00AB09E1 /* webdav.json */; };
+		3C90CEA7180C636F00C89B3A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CFC0D84180C634800B16437 /* XCTest.framework */; };
+		3C90CEA9180C687A00C89B3A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C90CEA8180C687A00C89B3A /* MobileCoreServices.framework */; };
+		3C90CEAA180C689100C89B3A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C90CEA8180C687A00C89B3A /* MobileCoreServices.framework */; };
+		3CFC0D85180C634800B16437 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CFC0D84180C634800B16437 /* XCTest.framework */; };
 		5FEEF26316CE830C002C1CBF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEEF26216CE830C002C1CBF /* Foundation.framework */; };
 		5FEEF26F16CE840F002C1CBF /* DAVKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FED591121D989900DD1DFF /* DAVKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FEEF27016CE8426002C1CBF /* NSDateRFC1123.h in Headers */ = {isa = PBXBuildFile; fileRef = F94970EB132A093600713958 /* NSDateRFC1123.h */; };
@@ -90,7 +92,6 @@
 		5FEEF28016CE8461002C1CBF /* DAVSession.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FED599121D989900DD1DFF /* DAVSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FEEF28116CE8461002C1CBF /* DAVSession.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FED59A121D989900DD1DFF /* DAVSession.m */; };
 		5FEEF28216CE854C002C1CBF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEEF26216CE830C002C1CBF /* Foundation.framework */; };
-		5FEEF28416CE8598002C1CBF /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEEF28316CE8596002C1CBF /* MobileCoreServices.framework */; };
 		5FEEF28616CE868B002C1CBF /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEEF28516CE868A002C1CBF /* CoreServices.framework */; };
 		C9181BBC121DC31D0022E4AC /* DAVResponseItem.h in Headers */ = {isa = PBXBuildFile; fileRef = C9181BBA121DC31D0022E4AC /* DAVResponseItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9181BBD121DC31D0022E4AC /* DAVResponseItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C9181BBB121DC31D0022E4AC /* DAVResponseItem.m */; };
@@ -149,7 +150,6 @@
 		221D56BB1726A51400527AD9 /* DAVMoveRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DAVMoveRequest.m; path = Sources/Core/DAVMoveRequest.m; sourceTree = "<group>"; };
 		221D56C11726A60C00527AD9 /* DAVRequests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAVRequests.h; path = Sources/Core/DAVRequests.h; sourceTree = "<group>"; };
 		221F8BA817259BFF004E7B9D /* Tests iOS.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		221F8BB217259F16004E7B9D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = ../../../../iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Developer/Library/Frameworks/SenTestingKit.framework; sourceTree = SDKROOT; };
 		22AC1B5817426F1B00AB09E1 /* KMSCloseCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMSCloseCommand.h; sourceTree = "<group>"; };
 		22AC1B5917426F1B00AB09E1 /* KMSCloseCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMSCloseCommand.m; sourceTree = "<group>"; };
 		22AC1B5A17426F1B00AB09E1 /* KMSCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMSCommand.h; sourceTree = "<group>"; };
@@ -183,6 +183,8 @@
 		22AC1B7C17426F1B00AB09E1 /* http.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = http.json; sourceTree = "<group>"; };
 		22AC1B9917426F1C00AB09E1 /* webdav.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = webdav.json; sourceTree = "<group>"; };
 		32DBCF5E0370ADEE00C91783 /* DAVKit_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAVKit_Prefix.pch; sourceTree = "<group>"; };
+		3C90CEA8180C687A00C89B3A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		3CFC0D84180C634800B16437 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		5FEEF26016CE830C002C1CBF /* libDAVKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDAVKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FEEF26216CE830C002C1CBF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5FEEF28316CE8596002C1CBF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
@@ -211,7 +213,7 @@
 		C9FED5B2121D98D600DD1DFF /* BasicTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicTests.m; path = Sources/Tests/BasicTests.m; sourceTree = "<group>"; };
 		C9FED5B7121D98D600DD1DFF /* DAVTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAVTest.h; path = Sources/Tests/DAVTest.h; sourceTree = "<group>"; };
 		C9FED5B8121D98D600DD1DFF /* DAVTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DAVTest.m; path = Sources/Tests/DAVTest.m; sourceTree = "<group>"; };
-		C9FF77EC121C6F51001250C7 /* Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9FF77EC121C6F51001250C7 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9FF77ED121C6F51001250C7 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		F94970EB132A093600713958 /* NSDateRFC1123.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDateRFC1123.h; sourceTree = "<group>"; };
 		F94970EC132A093600713958 /* NSDateRFC1123.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDateRFC1123.m; sourceTree = "<group>"; };
@@ -222,10 +224,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				221F8BB417259F60004E7B9D /* MobileCoreServices.framework in Frameworks */,
+				3C90CEA9180C687A00C89B3A /* MobileCoreServices.framework in Frameworks */,
+				3CFC0D85180C634800B16437 /* XCTest.framework in Frameworks */,
 				221F8BAC17259C79004E7B9D /* libDAVKit.a in Frameworks */,
 				221F8BAF17259DD7004E7B9D /* Foundation.framework in Frameworks */,
-				221F8BB317259F16004E7B9D /* SenTestingKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +235,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FEEF28416CE8598002C1CBF /* MobileCoreServices.framework in Frameworks */,
+				3C90CEAA180C689100C89B3A /* MobileCoreServices.framework in Frameworks */,
 				5FEEF26316CE830C002C1CBF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9FF7821121C7224001250C7 /* DAVKit.framework in Frameworks */,
+				3C90CEA7180C636F00C89B3A /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				8DC2EF5B0486A6940098B216 /* DAVKit.framework */,
-				C9FF77EC121C6F51001250C7 /* Tests.octest */,
+				C9FF77EC121C6F51001250C7 /* Tests.xctest */,
 				5FEEF26016CE830C002C1CBF /* libDAVKit.a */,
 				221F8BA817259BFF004E7B9D /* Tests iOS.octest */,
 			);
@@ -394,7 +397,8 @@
 		5FEEF26116CE830C002C1CBF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				221F8BB217259F16004E7B9D /* SenTestingKit.framework */,
+				3C90CEA8180C687A00C89B3A /* MobileCoreServices.framework */,
+				3CFC0D84180C634800B16437 /* XCTest.framework */,
 				5FEEF26216CE830C002C1CBF /* Foundation.framework */,
 				5FEEF28816CE869C002C1CBF /* iOS */,
 				5FEEF28716CE8696002C1CBF /* OSX */,
@@ -603,8 +607,8 @@
 			);
 			name = "Tests OS X";
 			productName = Tests;
-			productReference = C9FF77EC121C6F51001250C7 /* Tests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = C9FF77EC121C6F51001250C7 /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -856,7 +860,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				RUN_CLANG_STATIC_ANALYZER = YES;
-				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -867,7 +870,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				RUN_CLANG_STATIC_ANALYZER = YES;
-				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -877,17 +879,15 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = "\"$(SDKROOT)/Developer/Library/Frameworks\"";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_FRAMEWORKS_DIR)";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = DAVKit_Prefix.pch;
 				INFOPLIST_FILE = "Tests-Info.plist";
 				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
 				PRODUCT_NAME = "Tests iOS";
-				SDKROOT = iphoneos6.1;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -900,15 +900,13 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = "\"$(SDKROOT)/Developer/Library/Frameworks\"";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_FRAMEWORKS_DIR)";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = DAVKit_Prefix.pch;
 				INFOPLIST_FILE = "Tests-Info.plist";
 				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
 				PRODUCT_NAME = "Tests iOS";
-				SDKROOT = iphoneos6.1;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				WRAPPER_EXTENSION = octest;
 				ZERO_LINK = NO;
@@ -931,18 +929,15 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = DAVKit_Prefix.pch;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = DAVKit;
 				PUBLIC_HEADERS_FOLDER_PATH = include/DAVKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 			};
 			name = Debug;
 		};
@@ -962,12 +957,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = DAVKit_Prefix.pch;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = DAVKit;
 				PUBLIC_HEADERS_FOLDER_PATH = include/DAVKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -979,7 +974,10 @@
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_MODEL_TUNING = G5;
@@ -991,11 +989,8 @@
 				OTHER_LDFLAGS = (
 					"-framework",
 					Cocoa,
-					"-framework",
-					SenTestingKit,
 				);
 				PRODUCT_NAME = Tests;
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -1007,7 +1002,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1017,11 +1015,8 @@
 				OTHER_LDFLAGS = (
 					"-framework",
 					Cocoa,
-					"-framework",
-					SenTestingKit,
 				);
 				PRODUCT_NAME = Tests;
-				WRAPPER_EXTENSION = octest;
 				ZERO_LINK = NO;
 			};
 			name = Release;

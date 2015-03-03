@@ -54,7 +54,7 @@
             self.url = [NSURL URLWithString:[NSString stringWithFormat:@"%@://%@%@", url.scheme, url.host, url.path]];
 
             ok = self.url != nil;
-            STAssertNotNil(self.url, @"You need to set a test server address. Use the defaults command on the command line: defaults write otest DAVTestURL \"server-url-here\".\n\nNote that the iOS tests read from the otest.plist in ~/Library/Application Support/iPhone Simulator/Library/Preferences, so you'll need to edit that one manually.");
+            XCTAssertNotNil(self.url, @"You need to set a test server address. Use the defaults command on the command line: defaults write otest DAVTestURL \"server-url-here\".\n\nNote that the iOS tests read from the otest.plist in ~/Library/Application Support/iPhone Simulator/Library/Preferences, so you'll need to edit that one manually.");
         }
 
         if (ok)
@@ -62,7 +62,7 @@
             NSLog(@"Testing %@ as %@ %@", self.url, self.user, self.password);
 
             _session = [[DAVSession alloc] initWithRootURL:self.url delegate:self];
-            STAssertNotNil(_session, @"Couldn't create DAV session");
+            XCTAssertNotNil(_session, @"Couldn't create DAV session");
         }
     }
 }
@@ -138,7 +138,7 @@
 
 - (void)queueAndWaitForRequest:(DAVRequest*)request
 {
-	STAssertNotNil(request, @"Couldn't create the request");
+	XCTAssertNotNil(request, @"Couldn't create the request");
 
     _done = NO;
     self.error = nil;
@@ -187,9 +187,9 @@
         NSURLCredential *credentials = [NSURLCredential credentialWithUser:self.user
                                                                   password:self.password
                                                                persistence:NSURLCredentialPersistenceNone];
-        STAssertNotNil(credentials, @"Couldn't create credentials");
-        STAssertTrue([self.user isEqualToString:credentials.user], @"Couldn't set username");
-        STAssertTrue([self.password isEqualToString:credentials.password], @"Couldn't set password");
+        XCTAssertNotNil(credentials, @"Couldn't create credentials");
+        XCTAssertTrue([self.user isEqualToString:credentials.user], @"Couldn't set username");
+        XCTAssertTrue([self.password isEqualToString:credentials.password], @"Couldn't set password");
         
         [[challenge sender] useCredential:credentials forAuthenticationChallenge:challenge];
     }

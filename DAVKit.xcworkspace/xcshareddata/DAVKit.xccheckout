@@ -5,42 +5,42 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>A5CC9F9B-AB0E-4D46-AEC8-85180AC1FA8F</string>
+	<string>E2E9C605-950B-4CF2-B3F5-C7075C5E7A99</string>
 	<key>IDESourceControlProjectName</key>
 	<string>DAVKit</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>4DBE8521-CFC4-42BD-BF9F-A2B70FB93257</key>
-		<string>ssh://github.com/karelia/MockServer.git</string>
-		<key>A83B07BE-C454-4AD2-884C-BC9377EDC056</key>
+		<key>6FC454DF-E2BB-4398-B7EE-54CB5CC085E8</key>
+		<string>https://github.com/karelia/DAVKit.git</string>
+		<key>863EF849-9A53-40C2-8298-F48FCC65C254</key>
+		<string>https://github.com/karelia/MockServer.git</string>
+		<key>DE6DA146-0F19-4BB2-84ED-FEB5D1DBB7E0</key>
 		<string>https://github.com/boredzo/iso-8601-date-formatter.git</string>
-		<key>B0888B10-C721-48BD-A4B1-60F9E090EEDC</key>
-		<string>ssh://github.com/karelia/DAVKit.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>DAVKit.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>4DBE8521-CFC4-42BD-BF9F-A2B70FB93257</key>
-		<string>../Tests/MockServer</string>
-		<key>A83B07BE-C454-4AD2-884C-BC9377EDC056</key>
-		<string>../Sources/iso-8601-date-formatter</string>
-		<key>B0888B10-C721-48BD-A4B1-60F9E090EEDC</key>
+		<key>6FC454DF-E2BB-4398-B7EE-54CB5CC085E8</key>
 		<string>..</string>
+		<key>863EF849-9A53-40C2-8298-F48FCC65C254</key>
+		<string>../Tests/MockServer</string>
+		<key>DE6DA146-0F19-4BB2-84ED-FEB5D1DBB7E0</key>
+		<string>../Sources/iso-8601-date-formatter</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/karelia/DAVKit.git</string>
+	<string>https://github.com/karelia/DAVKit.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>B0888B10-C721-48BD-A4B1-60F9E090EEDC</string>
+	<string>6FC454DF-E2BB-4398-B7EE-54CB5CC085E8</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>B0888B10-C721-48BD-A4B1-60F9E090EEDC</string>
+			<string>6FC454DF-E2BB-4398-B7EE-54CB5CC085E8</string>
 			<key>IDESourceControlWCCName</key>
 			<string>DAVKit</string>
 		</dict>
@@ -48,7 +48,7 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>A83B07BE-C454-4AD2-884C-BC9377EDC056</string>
+			<string>DE6DA146-0F19-4BB2-84ED-FEB5D1DBB7E0</string>
 			<key>IDESourceControlWCCName</key>
 			<string>iso-8601-date-formatter</string>
 		</dict>
@@ -56,7 +56,7 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>4DBE8521-CFC4-42BD-BF9F-A2B70FB93257</string>
+			<string>863EF849-9A53-40C2-8298-F48FCC65C254</string>
 			<key>IDESourceControlWCCName</key>
 			<string>MockServer</string>
 		</dict>

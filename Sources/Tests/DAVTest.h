@@ -5,7 +5,7 @@
 //  Copyright Matt Rajca 2010. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 #import <DAVKit/DAVKit.h>
 #import "KMSTestCase.h"
 

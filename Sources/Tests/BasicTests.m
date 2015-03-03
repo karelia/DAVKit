@@ -144,15 +144,15 @@
         [self makeTestDirectory];
 
         // did we get an error?
-        STAssertNil(self.error, @"unexpected error for MKCOL %@", self.error);
-        STAssertNil(self.result, @"unexpected result for MKCOL %@", self.result);
+        XCTAssertNil(self.error, @"unexpected error for MKCOL %@", self.error);
+        XCTAssertNil(self.result, @"unexpected result for MKCOL %@", self.result);
 
         // try to make the directory again - we should get back a 405, which we ignore
         [self useResponseSet:@"make fails"];
         [self makeTestDirectory];
 
-        STAssertTrue(self.error.code == 405, @"unexpected error for MKCOL %@", self.error);
-        STAssertNil(self.result, @"unexpected result for MKCOL %@", self.result);
+        XCTAssertTrue(self.error.code == 405, @"unexpected error for MKCOL %@", self.error);
+        XCTAssertNil(self.result, @"unexpected result for MKCOL %@", self.result);
 
         [self removeTestDirectory];
     }
@@ -166,8 +166,8 @@
 
         [self makeTestFile];
 
-        STAssertNil(self.error, @"Unexpected error for PUT %@", self.error);
-        STAssertNil(self.result, @"Unexpected result for PUT %@", self.result);
+        XCTAssertNil(self.error, @"Unexpected error for PUT %@", self.error);
+        XCTAssertNil(self.result, @"Unexpected result for PUT %@", self.result);
 
         [self removeTestDirectory];
     }
@@ -183,9 +183,9 @@
         self.server.data = [self testData];
         [self queueAndWaitForRequest:req];
 
-        STAssertNil(self.error, @"Unexpected error for GET %@", self.error);
-        STAssertTrue([self.result isKindOfClass:[NSData class]], @"Expecting a NSData object for GET requests");
-        STAssertTrue([self.result length] == [self.testText length], @"Invalid length (string should be %@)", self.testText);
+        XCTAssertNil(self.error, @"Unexpected error for GET %@", self.error);
+        XCTAssertTrue([self.result isKindOfClass:[NSData class]], @"Expecting a NSData object for GET requests");
+        XCTAssertTrue([self.result length] == [self.testText length], @"Invalid length (string should be %@)", self.testText);
 
         [self removeTestDirectory];
     }
@@ -202,8 +202,8 @@
         req.overwrite = YES;
         [self queueAndWaitForRequest:req];
 
-        STAssertNil(self.error, @"Unexpected error for COPY %@", self.error);
-        STAssertNil(self.result, @"Unexpected result for COPY %@", self.result);
+        XCTAssertNil(self.error, @"Unexpected error for COPY %@", self.error);
+        XCTAssertNil(self.result, @"Unexpected result for COPY %@", self.result);
 
         [self removeTestDirectory];
     }
@@ -219,8 +219,8 @@
         req.destinationPath = [self fullPathForPath:@"davkittest/filetest24.txt"];
         [self queueAndWaitForRequest:req];
 
-        STAssertNil(self.error, @"Unexpected error for MOVE %@", self.error);
-        STAssertNil(self.result, @"Unexpected result for MOVE %@", self.result);
+        XCTAssertNil(self.error, @"Unexpected error for MOVE %@", self.error);
+        XCTAssertNil(self.result, @"Unexpected result for MOVE %@", self.result);
 
         [self removeTestDirectory];
     }
@@ -249,9 +249,9 @@
         self.server.data = [self emptyDirectoryListingData];
         [self queueAndWaitForRequest:req];
 
-        STAssertNil(self.error, @"Unexpected error for PROPFIND %@", self.error);
-        STAssertTrue([self.result isKindOfClass:[NSArray class]], @"Expecting a NSArray object for PROPFIND requests");
-        STAssertEquals([self.result count], 1UL, @"Unexpected result count %lu %@", [self.result count], self.result);
+        XCTAssertNil(self.error, @"Unexpected error for PROPFIND %@", self.error);
+        XCTAssertTrue([self.result isKindOfClass:[NSArray class]], @"Expecting a NSArray object for PROPFIND requests");
+        XCTAssertEqual([self.result count], 1UL, @"Unexpected result count %lu %@", [self.result count], self.result);
 
         NSString* path1 = @"davkittest/filetest22.txt";
         NSString* path2 = @"davkittest/filetest23.txt";
@@ -265,16 +265,16 @@
         self.server.data = [self directoryListingData];
         [self queueAndWaitForRequest:req2];
 
-        STAssertNil(self.error, @"Unexpected error for PROPFIND %@", self.error);
-        STAssertTrue([self.result isKindOfClass:[NSArray class]], @"Expecting a NSArray object for PROPFIND requests");
-        STAssertEquals([self.result count], 4UL, @"Unexpected result count %lu %@", [self.result count], self.result);
+        XCTAssertNil(self.error, @"Unexpected error for PROPFIND %@", self.error);
+        XCTAssertTrue([self.result isKindOfClass:[NSArray class]], @"Expecting a NSArray object for PROPFIND requests");
+        XCTAssertEqual([self.result count], 4UL, @"Unexpected result count %lu %@", [self.result count], self.result);
 
         NSUInteger n = 0;
         NSArray* names = @[@"davkittest/", path1, path2, path3];
         for (DAVResponseItem* item in self.result)
         {
             NSString* expected = [self fullPathForPath:names[n++]];
-            STAssertTrue([self path:item.href matchesPath:expected], @"expected %@ got %@", expected, item.href);
+            XCTAssertTrue([self path:item.href matchesPath:expected], @"expected %@ got %@", expected, item.href);
         }
 
         [self removeTestDirectory];
@@ -287,8 +287,8 @@
         [self makeTestDirectory];
         
         [self removeTestDirectory];
-        STAssertNil(self.error, @"Unexpected error for DELETE %@", self.error);
-        STAssertNil(self.result, @"Unexpected result for DELETE %@", self.result);
+        XCTAssertNil(self.error, @"Unexpected error for DELETE %@", self.error);
+        XCTAssertNil(self.result, @"Unexpected result for DELETE %@", self.result);
     }
 }
 
